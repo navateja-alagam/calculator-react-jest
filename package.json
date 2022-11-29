@@ -12,7 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --config jest.config.js",
+    "testCoverage": "jest --coverage --config jest.config.js",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -26,5 +27,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@stryker-mutator/core": "^6.3.0",
+    "@stryker-mutator/jest-runner": "^6.3.0",
+    "babel-jest": "^29.3.1"
   }
 }
