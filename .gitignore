@@ -24,3 +24,5 @@ yarn-error.log*
 .stryker-tmp
 
 /reports/mutation
+
+.env

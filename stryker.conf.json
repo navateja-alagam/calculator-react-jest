@@ -5,8 +5,16 @@
   "reporters": [
     "progress",
     "clear-text",
-    "html"
+    "html",
+    "dashboard"
   ],
+  "dashboard": {
+    "project": "https://github.com/navateja-alagam/calculator-react-jest",
+    "version": "master",
+    "module": "my-module",
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
   "coverageAnalysis": "off",
   "jest": {
     "projectType": "create-react-app"
